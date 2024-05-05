@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <main class="formulario">
+        <img src="" alt="">
+
+        <form class="container">
+
+            <input type="text" name="nome" class="inputs required" placeholder="Digite seu nome" oninput="nameValidate()">
+            <br>
+            <span class="spans-required">digite um nome valido</span>
+            <br>
+
+            <input type="email" name="email" class="inputs required" placeholder=" Email" oninput="emailValidadte()">
+            <br>
+            <span class="spans-required">digite um email valido</span>
+
+            <br>
+            <input type="password" name="senha" class="inputs required" placeholder="digite sua senha" oninput="senhaValidate()">
+            <br>
+            <span class="spans-required"> senha deve ter no minimo 8 caracteres</span>
+            <br>
+
+            <input type="password" name="senhas" class="inputs required" placeholder=" digite a mesma senha" oninput=" comparePassord()">
+            <br>
+            <span class="spans-required">senhas incompativeis</span>
+            <br>
+
+            <input type="number" name="numero" class="inputs required" placeholder="Celular" oninput="celularValidate()">
+            <br>
+            <span class="spans-required">digite um numero valido</span>
+            <br>
+
+            <textarea name="mensagem" class="inputs required" cols="37" rows="10" placeholder="Mensagem" oninput=" enviaMensagemValidate()"></textarea>
+            <br>
+            <span class="spans-required">envie uma msg</span>
+            <br>
+            <button id="classe-botao">Enviar</button>
+
+
+        </form>
+    </main>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
