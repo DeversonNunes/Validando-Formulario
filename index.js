@@ -14,7 +14,7 @@ campos.forEach(input=>{
         }
     })
 })
-container.addEventListener('click', (event)=>{
+classeBotao.addEventListener('click', (event)=>{
    
     event.preventDefault();
     nameValidate();
